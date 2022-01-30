@@ -98,17 +98,22 @@ a:hover{
   /*background: url("../img/main_bg.png") no-repeat center center;
   background-size: cover;
   padding: 9rem 0;*/
+  min-height: 80rem;
   &_title{
     max-width: 70rem;
     margin-bottom: 4rem;
+    padding-top: 8rem;
     &_table{
-      background: #DA5D1A;
-      border-radius: 5px;
+
+
     }
     p{
       padding: 1.2rem 2rem;
+      display: inline-block;
+      background: #DA5D1A;
       color: @light;
       font-family: Rubik;
+      border-radius: 5px;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -358,6 +363,29 @@ a:hover{
 }
 .works_img{
   border-radius: 0.5rem;
+  padding-bottom: 50px;
+}
+.works_about_block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  background: #fff;
+  filter: drop-shadow(0px 8px 12px rgba(9, 30, 66, 0.15));
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 5px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: @text;
+}
+.works_block{
+  margin: 0 20px;
 }
 .swiper-button-next:after{
   content: 'next';
@@ -499,7 +527,53 @@ a:hover{
   text-align: center;
   padding-top: 2rem;
 }
+.management{
+  background: url("../img/BG_manage.png") no-repeat center center;
+  background-size: cover;
+  &_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 45%;
+    }
+  }
+  &_text_block{
+    width: 45%;
+    text-align: center;
+    h2{
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 57px;
+      color: #0F1A2A;
+      margin-bottom: 2.5rem;
+      b{
+        color: @main;
+      }
+      span{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 3px @main;
+      }
 
+    }
+    p{
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: @text;
+      margin-bottom: 5rem;
+    }
+  }
+}
+.unite{
+  background: url("../img/green_line.png") no-repeat center center;
+  background-size: cover;
+}
 
 @media (max-width: 850px) {
   .swiper-button-next, .swiper-button-prev{
@@ -592,7 +666,7 @@ a:hover{
     }
   }
   .forms{
-    background: rgba(211, 117, 52, 0.2);
+    background: rgba(99,132,4, 0.2);
     min-height: 2rem;
     margin-top: 10rem;
     &_block{
@@ -663,11 +737,32 @@ a:hover{
   }
 
   .face_block{
+    min-height: 0;
     &_title{
       margin-bottom: 2.5rem;
+      padding-top: 0;
+      max-width: 45rem;
+      &_table{
+        p{
+          font-size: 12px;
+          line-height: 14px;
+          padding: 0.8rem 1.5rem;
+        }
+      }
       h1{
         font-size: 48px;
         line-height: 57px;
+
+      }
+      h3{
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 1rem;
+      }
+      h5{
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 4rem;
       }
     }
     &_list{
@@ -683,6 +778,52 @@ a:hover{
       }
     }
   }
+  .works_block{
+    margin: 0 0px;
+  }
+  .works_about_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background: #fff;
+    filter: drop-shadow(0px 8px 12px rgba(9, 30, 66, 0.15));
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 1px;
+    border-radius: 5px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #27364b;
+  }
+  .management{
+    &_block{
+      img{
+        width: 36%;
+      }
+    }
+    &_text{
+      &_block{
+        width: 57%;
+        h2{
+          font-size: 30px;
+          line-height: 36px;
+          margin-bottom: 1.4rem;
+        }
+        p{
+          font-size: 12px;
+          line-height: 150%;
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
+
+
 }
 
 
@@ -809,11 +950,21 @@ a:hover{
 
     &_title{
       h1{
-        font-size: 36px;
-        line-height: 43px;
-        text-align: center;
-      }
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 1.4rem;
 
+      }
+      h3{
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 2.4rem;
+      }
+    h5{
+      font-size: 11px;
+      line-height: 14px;
+      margin-bottom: 4rem;
+    }
     }
     &_list{
       font-size: 14px;
@@ -821,12 +972,36 @@ a:hover{
     }
     &_bg{
       padding: 2rem;
-      background: rgba(211, 117, 52, 0.2);
+      background: rgba(99,132,4, 0.2);
       border-radius: 10px;
     }
   }
   .form-input{
     min-width: 28rem;
+  }
+  .management{
+    &_block{
+      flex-wrap: wrap;
+      img{
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+    &_text{
+      &_block{
+        width: 100%;
+        h2{
+          font-size: 24px;
+          line-height: 28px;
+          margin-bottom: 1.4rem;
+        }
+        p{
+          font-size: 10px;
+          line-height: 150%;
+          margin-bottom: 2.3rem;
+        }
+      }
+    }
   }
 
 }

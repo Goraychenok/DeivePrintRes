@@ -20,7 +20,22 @@
     <a style="padding: 20px; color: black; font-size: 20px" href="index.html">Первая страница</a>
 </header>
 
+<style>
+    .face_block{
+        background: url('./img/bg_green.png') no-repeat center center; background-size: cover;
+    }
+    @media (max-width: 850px) {
+        .face_block{
+            background: url('./img/bg_green_pad.png') no-repeat center center;
+        }
 
+    }
+    @media (max-width: 500px) {
+        .face_block{
+            background: #fff;
+        }
+    }
+</style>
 <main class="main">
     <section class="face_block" >
         <div class="container">
@@ -112,37 +127,76 @@
 
 
 
-
-
-
-    <section class="works">
-        <div class="container">
-            <div class="section_title">
-                <h2>ПРИМЕРЫ НАШИХ РАБОТ</h2>
+    <section class="unite">
+        <section class="management">
+            <div class="container">
+                <div class="management_block">
+                    <img src="./img/Persona.png" alt="">
+                    <div class="management_text_block">
+                        <h2>
+                            РУКОВОДИТЕЛЬ ОТДЕЛА <b>ПРОДАЖ</b> <span>ЕКАТЕРИНА</span>
+                        </h2>
+                        <p>Напишите нам и мы ответим на интересующие Вас вопросы.</p>
+                        <button class="button button_all">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    </div>
+                </div>
             </div>
-            <div class="works_block" style="position: relative">
-                <div class="swiper mySwiper_second">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./img/works1.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works2.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works1.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works2.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works1.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works2.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works1.png" alt="" class="works_img"></div>
-                        <div class="swiper-slide"><img src="./img/works2.png" alt="" class="works_img"></div>
+        </section>
+        <section class="works">
+            <div class="container">
+                <div class="section_title">
+                    <h2>ОБЛАСТЬ ПРИМЕНЕНИЯ</h2>
+                </div>
+                <div class="works_block" style="position: relative">
+                    <div class="swiper mySwiper_second">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div class="works_block">
+                                <img src="./img/Image21.png" alt="" class="works_img">
+                                <div class="works_about_block">Таблички</div></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="works_block">
+                                    <img src="./img/Image22.png" alt="" class="works_img">
+                                    <div class="works_about_block">Стенды</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><div class="works_block">
+                                <img src="./img/Image21.png" alt="" class="works_img">
+                                <div class="works_about_block">Таблички</div></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="works_block">
+                                    <img src="./img/Image22.png" alt="" class="works_img">
+                                    <div class="works_about_block">Стенды</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><div class="works_block">
+                                <img src="./img/Image21.png" alt="" class="works_img">
+                                <div class="works_about_block">Таблички</div></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="works_block">
+                                    <img src="./img/Image22.png" alt="" class="works_img">
+                                    <div class="works_about_block">Стенды</div>
+                                </div>
+                            </div>
 
+
+
+                        </div>
+
+                        <div class="swiper-pagination swiper-pagination_custom_second"></div>
 
                     </div>
-
-                    <div class="swiper-pagination swiper-pagination_custom_second"></div>
-
+                    <div class="swiper-button-next" ></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-button-next" ></div>
-                <div class="swiper-button-prev"></div>
             </div>
-        </div>
+        </section>
     </section>
+
+
+
 
 
     <section class="about">
